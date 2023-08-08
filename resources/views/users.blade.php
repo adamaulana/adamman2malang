@@ -27,6 +27,15 @@
 
     <div style="text-align: center; padding:5% 20%;">
         <h2>Data User</h2>
+        @if($errors->has('nama'))
+            <div class="alert alert-danger">{{ $errors->first('nama') }}</div>
+        @endif
+        @if($errors->has('usia'))
+            <div class="alert alert-danger">{{ $errors->first('usia') }}</div>
+        @endif
+        @if($errors->has('kota'))
+            <div class="alert alert-danger">{{ $errors->first('kota') }}</div>
+        @endif
         <br>
         <table class="table table-bordered">
             <tr>
