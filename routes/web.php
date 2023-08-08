@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,4 +20,5 @@ Route::get('/', function () {
 
 Route::post('/register',[UserController::class,'register']);
 Route::get('/user',[UserController::class,'index']);
+Route::get('/home',[HomeController::class,'index']);
 
